@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.top {
+    background: linear-gradient( blue, indigo 80%) ;
+    color: white;
+    text-align: left;
+    padding: 0 0 4em 1em;
+    font-weight: bold;
+}
+header {
+    padding-top: 1em;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+p {
+    margin: 0;
+}
+#rule{
+    margin-top: 1em;
+}
+h1 {
+    margin: 1.5em 0 1.5em 0;
+    color: white;
+    font-size: 2.3rem;
+}
+.gameContent {
+    height: 150vh;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: indigo; 
+   
+}
+#tableSpace {
+    height: 90vh;
+    border: 1px solid black;
+    background-color: rgba(0,0,0,.3);
+    margin-bottom: 4em;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#gameMode {
+    color: white;
+    position: absolute;
+    margin: 1em 0 0.2em 0;
+    font-size: 2.5rem;
+}
+h2 {
+    margin-bottom: 0;
+}
+#btnEasy, #btnIntermediate, #btnExpert, #btnConveyor{
+    border-radius: 0.5em;
+    width: 44%;
+    padding: 0.5em;
+    outline: none;
+    border: none;
+    background-color: purple;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer; 
+}
+#btnEasy {
+    margin: 1em 0.5em 0.5em 0.5em;
+    position: relative;
+    left: 30%;
+}
+
+#btnIntermediate {
+    margin: 0.5em;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    left: 30%;
+}
+
+#btnExpert {
+    margin-top: 1em;
+    display: block;
+    position: relative;
+    left: 32%;
+} 
+#btnConveyor{
+    margin-top: 1em;
+    display: block;
+    position: relative;
+    left: 32%;
+}
+
+#btnEasy:hover, #btnIntermediate:hover, #btnExpert:hover, #btnMenu:hover, #btnConveyor:hover{
+    background-color: rgb(71, 0, 71);
+    box-shadow: 0 0 50px rgba(240, 46, 170, 0.7);
+}
+
+#conveyor {
+   margin: auto;
+   padding: 0.5em;
+   width: 50%;
+   height: 70vh;
+   display: block;
+   position: relative;
+   text-align: center;
+   border: 3px solid white;
+   overflow: hidden;
+} 
+.conveyor button{
+    position: absolute;
+    border-radius:0.3em;
+    outline: none;
+    background-color: black;
+    border: 2px solid black;
+    cursor:pointer;
+    width:120px; height:120px;
+    text-align: center;
+    padding: 0.5em;
+    color:white;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+table {
+    margin-top: 5%;
+    z-index: 1;
+    align-self: center;
+    background-color:rgb(31, 3, 97);
+    border: 3px solid black;
+    border-spacing: 0.3em;
+}
+td {
+    border-radius:0.3em;
+    background-color: black;
+    border: 2px solid black;
+    cursor:pointer;
+    width:60px; height:60px;
+    text-align: center;
+    padding: 0.5em;
+    color:white;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+td:hover {
+background-color: rgba(0,0,0,.7);
+}
+span {
+    position: absolute;
+    right: 2em;
+    font-size: 2rem;
+    color: white;
+}
+
+#scoreDisplay{
+    height:10%;
+    margin-top: 1em;
+}
+#timeDisplay {
+    display: none;
+    animation: fadeIn 2s infinite;
+    padding: 0;
+    margin: 0;
+    height: 2%;
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 1em;
+}
+#highscoreEasy {
+    height: 4%;
+    font-size:1em ;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 2%;
+    color: white;
+}
+#highscoreMedium {
+    height: 4%;
+    font-size:1em ;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 24%;
+    color: white;
+}
+#highscoreHard {
+    height: 4%;
+    font-size:1em ;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 53%;
+    color: white;
+}
+.highscoreTable h3{
+    position: absolute;
+    margin: 0;
+    top: 65%;
+    right: 42%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+.highscoreTable p{
+    margin: 2em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+#scores {
+    position: absolute;
+    margin: 0;
+    top: 70%;
+    right: 45%;
+}
+ #btnMenu {
+    position: absolute;
+    top: 115%;
+    right: 45%;
+    border-radius: 0.5em;
+    padding: 0.5em 1em 0.5em 1em;
+    outline: none;
+    border: none;
+    background-color: purple;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    display: block;
+}
+
+.fadeIn {
+    animation: fadeIn 2s forwards;
+}
+.heading {
+    animation: fadeIn1 2s forwards;
+}
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+ }
+
+ @keyframes fadeIn1{
+     from{
+         opacity: 0;
+        transform: translateY(-2em);
+     }
+     to{
+         opacity: 1;
+        transform: translateY(0);
+     }
+ }
+ @media (max-width: 930px){
+    #gameMode {
+        margin: 4em 0;
+        font-size: 1rem;
+        /* text-align: center; */
+    }
+    #btnEasy, #btnIntermediate, #btnExpert, #btnConveyor {
+        font-size: 1rem;
+    }
+    #btnMenu {
+        font-size: 1.5rem;
+        top: 105%;
+        right: 38%;
+        
+    }
+    .conveyor button{
+        width:75px; height:75px;
+        font-size: 1.5rem;
+    }
+    #timeDisplay {
+        margin: 1.8em 0 0 0;
+        right: 31%;
+        font-size: 1rem;
+    }
+    #conveyor {
+        width: 90%;
+        height: 48vh;
+     } 
+    #highscoreEasy{
+        left: 4%;
+        font-weight: bold;
+        font-size: .5em;
+    }
+    #highscoreMedium{
+        font-weight: bold;
+        left: 32%;
+        font-size: .5em;
+    }
+    #highscoreHard{
+        font-weight: bold;
+        left: 70%;
+        font-size: .5em;
+    }
+    span {
+        margin: 3em 0 0 0;
+        right: 38%;
+    }
+    table {
+        margin-top: 25%;
+    }
+    td {
+        width:40px; height:50px;
+        padding: 0.5em;
+        font-size: 1.5rem;
+    }
+    .highscoreTable h3 {
+        font-size: 2rem;
+        top: 58%;
+        right: 20%;
+    }
+    #scores {
+        top: 63%;
+        right: 29%;
+    }
+    .top{
+        padding: 0 0 1em 0;
+    }
+    .heading {
+        margin: 0 1em; 
+        text-align: center;
+    }
+}
